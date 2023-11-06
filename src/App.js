@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ToDo from "./ToDo";
 import Comment from "./Comment";
-import Post from "./Post";
+import Postlist from "./Postlist";
 
 function App() {
   // Uztaisi stāvokļa mainīgo toDo
@@ -31,7 +31,7 @@ function App() {
   return (
     <>{loading ? <p>loading...</p> : <ToDo {...toDo} /> }
     <Comment />
-    <Post />
+    <Postlist />
     </>
   );
 }

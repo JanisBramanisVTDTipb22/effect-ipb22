@@ -1,12 +1,12 @@
 import { Postlist } from "./Postlist" 
 
-function Post() {
+function Post(props) {
     return(
         <div>
-            <p>"userId": 1</p>
-            <p>"id": 4</p>
-            <p>"title": "et porro tempora"</p>
-            <p>"completed": true</p>
+            <p>"userId": {props.userId}</p>
+            <p>"id": {props.id}</p>
+            <p>"title": {props.title}</p>
+            <p>"body": {props.body}</p>
         </div>
     )
 }
